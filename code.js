@@ -2,7 +2,7 @@
 console.log("Script loaded !");
 document.getElementById("inputtext").autofocus = true;
 document.getElementById("inputtext").value = "";
-document.getElementById("inputtext").addEventListener("keyup", ({ key }) => {
+document.getElementById("inputtext").addEventListener("keydown", ({ key }) => {
   if (key === "Enter") {
     var search = document.getElementById("inputtext").value.toString();
     if (search.startsWith(":")) {
@@ -61,4 +61,3 @@ document.body.addEventListener("keyup", ({ key }) => {
   }
   console.log(compteur);
 });
-
