@@ -1,0 +1,82 @@
+@font-face {
+    font-family: fonttitle;
+    src: url(Zector.ttf)
+}
+
+
+html, body {
+    background-color: rgb(43, 42, 51);
+    padding:  0%;
+    margin:  0%;
+    width: 100%;
+    background-image: "";
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html, body, blockquote {
+    margin: 0%;
+    font-family: monospace;
+    color: white;
+}
+
+#blocker {
+    padding-top: 10%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+#mainpage {
+    display: flex;
+}
+#mainpage img {
+    width: 50%;
+    float: left;
+}
+
+#mainpage h1 {
+    width: 50%;
+    float: right;
+    transform: translateY(30%);
+    font-size: 90px;
+    font-weight: 900;
+    color: white;
+    font-family: fonttitle;
+}
+
+#mainpage p {
+    height: fit-content;
+    width: 50%;
+    padding: 0%;
+    margin-top: 20%;
+    transform: translateY(90%);
+    font-size: 15px;
+    font-weight: 900;
+    color: white;
+    font-family: fonttitle;
+}
+
+#cherchebar {
+    border:  8pt solid rgb(33, 32, 41);
+    background-color: rgb(33, 32, 41);
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+}
+
+#cherchebar img {
+float: left;
+}
+
+#cherchebar input {
+    color: wheat;
+    font-size: 36px;
+    font-family: monospace;
+    padding-left: 20px;
+    background-color: transparent;
+    border:  transparent;
+    outline: transparent;
+    width: 100%;
+
+}
