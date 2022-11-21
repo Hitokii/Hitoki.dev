@@ -5,6 +5,7 @@ document.getElementById("inputtext").addEventListener("keyup", ({ key }) => {
   if (key === "Enter") {
     var search = document.getElementById("inputtext").value.toString();
     if (search.startsWith(":")) {
+      search = search.toLowerCase();
       fetch("./shortcut.json")
         .then((data) => data.json())
         .then((data) => {
