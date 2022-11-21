@@ -3,13 +3,16 @@
     src: url(Zector.ttf)
 }
 
+html {
+    height: 100%;
+}
 
 html, body {
-    background-color: rgb(43, 42, 51);
+    background-color: rgb(25, 24, 29);
     padding:  0%;
     margin:  0%;
     width: 100%;
-    background-image: "";
+    min-height: 100%;
 
     background-repeat: no-repeat;
     background-size: cover;
