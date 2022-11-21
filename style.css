@@ -83,3 +83,12 @@ float: left;
     width: 100%;
 
 }
+
+#mainpage span {
+    transition: 500ms;
+}
+
+#mainpage span:hover {
+    cursor: pointer;
+    color: gold;
+}
