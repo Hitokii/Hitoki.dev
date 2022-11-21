@@ -1,12 +1,14 @@
 {
-    "lcl":"http://127.0.0.1:666",
-    "local":"http://127.0.0.1:666",
-    "syhix":"https://www.syhix.tv",
-    "hitoki":"https://hitokii.github.io",
+    "lcl":"http://127.0.0.1:80",
+    "local":"http://127.0.0.1:80",
+    "syhix":"https://syhix.tv",
+    "hitoki":"https://hitoki.dev",
     "up":"https://www.unknown-player.dev",
     "yt":"https://www.youtube.fr",
-    "nt":"https://www.netflix.fr",
+    "nt":"https://www.netflix.com",
     "cr":"https://www.crunchyroll.com",
     "tw":"https://www.twitter.com",
-    "pacman":"https://www.google.fr/logos/2010/pacman10-i.html"
+    "pacman":"https://www.google.fr/logos/2010/pacman10-i.html",
+    "dd":"https://discord.com/developers/applications",
+    "mcv":"https://minecraftvanilla.net/"
 }
