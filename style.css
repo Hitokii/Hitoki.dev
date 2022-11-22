@@ -7,6 +7,14 @@
     100% {opacity: 1;}
 }
 
+@keyframes fade {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+blockquote {
+    animation: fade 1s 3s forwards;
+}
 
 @font-face {
     font-family: fonttitle;
