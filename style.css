@@ -112,3 +112,10 @@ float: left;
     cursor: pointer;
     color: gold;
 }
+
+footer {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+
