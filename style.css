@@ -14,7 +14,11 @@
 
 @keyframes bounce {
     0% {margin-right: 3%;}
-    100% {margin-right: 2%;}
+    10% {margin-right: 2%;}
+    20% {margin-right: 3%;}
+    40% {margin-right: 2%;}
+    50% {margin-right: 3%;}
+    60% {margin-right: 2%;}
 }
 
 blockquote {
@@ -126,20 +130,21 @@ body, footer {
 
 #shortcut_logo {
     float: right;
-    margin-right: 2%;
-    width: 4%;
-    /* border: 1pt dashed white; */
+    margin-right: 3%;
+    width: 2%;
     border-radius: 360px;
+    animation: bounce 500ms 1s linear both;
 }
 
 #shortcut_logo:hover {
     cursor: pointer;    
-    animation: bounce 300ms ease-in-out alternate-reverse infinite;
+    
 }
 
 #shortcut_logo img {
-    filter: invert();
     width: 100%;
+    scale: 100%;
+    padding: 20%;
     border-radius: 360px;
-    background-color: #fff;
+    background-color: #000;
 }
