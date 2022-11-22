@@ -58,3 +58,5 @@ document.body.addEventListener("keyup", ({ key }) => {
       'url("https://media.giphy.com/media/yr7n0u3qzO9nG/giphy.gif")';
   }
 });
+
+function open_shortcut() {}
