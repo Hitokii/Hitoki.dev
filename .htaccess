@@ -1,3 +1,0 @@
-# Redirection du site avec www vers la version sans www
-RewriteCond %{HTTP_HOST} ^www.hitoki.dev [NC]
-RewriteRule ^(.*)$ https://hitoki.dev/$1 [L,R=301]
