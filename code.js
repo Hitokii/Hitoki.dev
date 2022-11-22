@@ -1,5 +1,3 @@
-// https://www.google.com/search?channel=fs&client=ubuntu&q=
-console.log("Script loaded !");
 document.getElementById("inputtext").autofocus = true;
 document.getElementById("inputtext").value = "";
 document.getElementById("inputtext").addEventListener("keydown", ({ key }) => {
@@ -59,5 +57,4 @@ document.body.addEventListener("keyup", ({ key }) => {
     document.body.style.backgroundImage =
       'url("https://media.giphy.com/media/yr7n0u3qzO9nG/giphy.gif")';
   }
-  console.log(compteur);
 });
