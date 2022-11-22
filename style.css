@@ -21,6 +21,12 @@
     60% {margin-right: 2%;}
 }
 
+@keyframes rotation {
+    0% {rotate: 0deg;}
+    100%{rotate: -420deg;}
+    
+}
+
 blockquote {
     animation: fade 1s 3s forwards;
 }
@@ -129,6 +135,7 @@ body, footer {
 }
 
 #shortcut_logo {
+    transition: 2s;
     float: right;
     margin-right: 3%;
     width: 2%;
@@ -137,7 +144,7 @@ body, footer {
 }
 
 #shortcut_logo:hover {
-    cursor: pointer;    
+    cursor: pointer; 
     
 }
 

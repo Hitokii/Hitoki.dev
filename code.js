@@ -134,4 +134,9 @@ document.body.addEventListener("keyup", ({ key }) => {
   }
 });
 
-function open_shortcut() {}
+function open_shortcut() {
+  document.getElementById("shortcut_logo").style.transition = "1s";
+  document.getElementById("shortcut_logo").style.marginRight = "5%";
+  document.getElementById("logomenu").style.animation =
+    "rotation 1s ease-in-out forwards";
+}
