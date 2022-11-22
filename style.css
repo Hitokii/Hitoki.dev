@@ -12,6 +12,11 @@
     100% {opacity: 0;}
 }
 
+@keyframes bounce {
+    0% {margin-right: 3%;}
+    100% {margin-right: 2%;}
+}
+
 blockquote {
     animation: fade 1s 3s forwards;
 }
@@ -119,3 +124,22 @@ body, footer {
     right: 0%;
 }
 
+#shortcut_logo {
+    float: right;
+    margin-right: 2%;
+    width: 4%;
+    /* border: 1pt dashed white; */
+    border-radius: 360px;
+}
+
+#shortcut_logo:hover {
+    cursor: pointer;    
+    animation: bounce 300ms ease-in-out alternate-reverse infinite;
+}
+
+#shortcut_logo img {
+    filter: invert();
+    width: 100%;
+    border-radius: 360px;
+    background-color: #fff;
+}
