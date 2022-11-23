@@ -1,0 +1,23 @@
+{
+          "FR": [
+                    {"name": "Français"},
+                    {"searchbar":"Tapez votre recherche..."},
+                    {"madeby":"par <span onclick='document.location.href = 'https://www.github.com/Hitokii' '>Hitoki</span>"},
+                    {"title":"Irefo"},
+                    {"quote":"\"c'etait une blague, je l'ai vraiment fait\""}
+          ],
+          "EN": [
+                    {"name": "English"},
+                    {"searchbar":"Search on the web..."},
+                    {"madeby":"by <span onclick='document.location.href = 'https://www.github.com/Hitokii' '>Hitoki</span>"},
+                    {"title":"Irefo"},
+                    {"quote":"\"It was a joke, I really made it\""}
+          ],        
+          "JP" : [
+                    {"name": "日本語"},
+                    {"searchbar":"検索を入力してください..."},
+                    {"madeby":"<span onclick='document.location.href = 'https://www.github.com/Hitokii' '>ヒトキ－さん</span>による"},
+                    {"title":"イレフォ"},
+                    {"quote":"\"それは冗談だった、本当にそれを作った\""}
+          ]
+}

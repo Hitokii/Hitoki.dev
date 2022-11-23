@@ -11,24 +11,45 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://hitoki.dev" />
     <meta property="og:image" content="http://hitoki.dev/Assets/img/Logo.png" />
-    <meta property="og:description" content="Irefo est un moteur de recherche dévelopé par Hitoki, Irefo possède plusieurs raccourcis ainsi que des Easter Eggs" />
+    <meta property="og:description" content="Irefo is a search engine made by Hitoki, Irefo have many useful shortcuts and some funny easter eggs" />
     <meta name="theme-color" content="#FFFFFF">
     <title>Irefo</title>
 </head>
 <body>
-    <blockquote>"c'etait une blague, je l'ai vraiment fait"</blockquote>
+    <!-- Quote -->
+    <blockquote id="quote"></blockquote>
+    <!-- Hamburger menu Btn -->
+    <div id="shortcut_logo" onclick="open_shortcut();">
+        <img id="logomenu" src="Assets/img/menu.png">
+        <img id="logocross" src="Assets/img/corss.png">
+    </div>
+    <!-- Hamburger Menu  -->
+    <div id="menu_block">
+        <center>
+        <h1>Language :</h1>
+                <img onclick="set_lang('FR')" class="flag" src="https://flagcdn.com/w320/fr.png">
+                <img onclick="set_lang('EN')"class="flag" src="https://flagcdn.com/w320/gb.png">
+                <img onclick="set_lang('JP')"class="flag" src="https://flagcdn.com/w320/jp.png">
+        </center>
+
+
+
+        <footer>ver 24</footer>
+    </div>
+    <!-- MAIN BLOCK -->
     <div id="blocker">
+    <!-- Title zone -->
     <div id="mainpage">
         <img draggable="false" src="Assets/img/Logo.png">
-        <h1>Irefo</h1>
-        <p>By <span onclick="document.location.href = 'https://www.github.com/Hitokii' ">Hitoki</span></p>
+        <h1 id="title"></h1>
+        <p id="coder"></p>
     </div>
+    <!-- Input zone -->
     <div id="cherchebar">
         <img draggable="false" src="Assets/img/emoji.png">
-        <input id="inputtext" type="search" placeholder="Tapez votre recherche"></input>
+        <input id="inputtext" type="search" placeholder="Search on the web..."></input>
     </div>
 </div>
-<footer>v.23</footer>
 <script type="text/javascript" src="code.js"></script>
 </body>
 </html>
