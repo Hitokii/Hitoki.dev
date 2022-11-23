@@ -1,9 +1,20 @@
+// COOKIES
+function set_cookie(name, value) {
+  document.cookie = name + "=" + value + ";";
+}
+
 document.getElementById("inputtext").autofocus = true;
 document.getElementById("inputtext").value = "";
 console.log(
   "Location detected : " + Intl.DateTimeFormat().resolvedOptions().timeZone
 );
 var language = "EN";
+var menu_open = false;
+var light = false;
+
+// THEME
+if (light) {
+}
 
 // LANGUAGE
 
@@ -135,8 +146,23 @@ document.body.addEventListener("keyup", ({ key }) => {
 });
 
 function open_shortcut() {
-  document.getElementById("shortcut_logo").style.transition = "1s";
-  document.getElementById("shortcut_logo").style.marginRight = "5%";
-  document.getElementById("logomenu").style.animation =
-    "rotation 1s ease-in-out forwards";
+  if (!menu_open) {
+    document.getElementById("menu_block").style.animation =
+      "menu_open 2s ease-in-out forwards";
+    document.getElementById("shortcut_logo").style.transform =
+      "translateX(-1500%)";
+    document.getElementById("logomenu").style.animation =
+      "roll_out 2s forwards";
+    document.getElementById("logocross").style.animation =
+      "roll_out2 2s forwards";
+    menu_open = true;
+  } else {
+    document.getElementById("menu_block").style.animation = "menu_close 2s";
+    document.getElementById("shortcut_logo").style.transition = "2s";
+    document.getElementById("shortcut_logo").style.transform = "translateX(0%)";
+    document.getElementById("logomenu").style.animation = "roll_in 2s forwards";
+    document.getElementById("logocross").style.animation =
+      "roll_in2 2s forwards";
+    menu_open = false;
+  }
 }
