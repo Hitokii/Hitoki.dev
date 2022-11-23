@@ -12,10 +12,6 @@ var language = "EN";
 var menu_open = false;
 var light = false;
 
-// THEME
-if (light) {
-}
-
 // LANGUAGE
 
 if (Intl.DateTimeFormat().resolvedOptions().timeZone.startsWith("Europe")) {
@@ -70,7 +66,12 @@ function set_lang(language) {
           document.getElementById("inputtext").placeholder =
             data.JP[1].searchbar;
           document.getElementById("coder").innerHTML = data.JP[2].madeby;
-          document.getElementById("title").style.fontSize = "450%";
+          if (window.matchMedia("(max-width: 760px)").matches) {
+            document.getElementById("title").style.fontSize = "200%";
+            document.getElementById("coder").style.fontSize = "80%";
+          } else {
+            document.getElementById("title").style.fontSize = "400%";
+          }
           document.getElementById("title").innerHTML = data.JP[3].title;
           document.getElementById("quote").innerHTML = data.JP[4].quote;
           break;

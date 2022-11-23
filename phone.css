@@ -1,5 +1,7 @@
 html, body, blockquote {
     font-size: 10px;
+    margin-top: 5px;
+    overflow: hidden;
 }
 
 #blocker {
@@ -36,4 +38,24 @@ width: 10%;
 
 #cherchebar input {
     font-size: 160%;
+}
+
+#shortcut_logo {
+    width: 5%;
+}
+
+#logocross {
+    top: -50%;
+}
+
+#menu_block {
+    width: 70%;
+}
+
+.flag {
+    height: 40px;
+}
+
+.flag:hover {
+    height: 60px;
 }
