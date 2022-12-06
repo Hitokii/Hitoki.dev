@@ -94,8 +94,9 @@ html, body {
     background-size: cover;
 }
 
-html, body, blockquote {
+blockquote {
     margin: 0%;
+    margin-top: 10px;
     font-family: monospace;
     color: white;
 }
@@ -231,6 +232,11 @@ body, footer {
     top: 0%;
     right: 0%;
     transform: translateX(100%);
+}
+
+#menu_block h1 {
+    color: white;
+    font-family: monospace;
 }
 
 .flag {
