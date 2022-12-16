@@ -10,11 +10,6 @@ console.log(
 );
 var language = "EN";
 var menu_open = false;
-var light = false;
-
-// THEME
-if (light) {
-}
 
 // LANGUAGE
 
@@ -37,6 +32,18 @@ switch (country) {
     language = "JP";
     break;
 
+  case "Rome":
+    language = "IT";
+    break;
+
+  case "Moscow":
+    language = "RU";
+    break;
+
+  case "Beijing":
+    language = "CN";
+    break;
+
   default:
     console.log("Default language is set");
     language = "EN";
@@ -51,31 +58,74 @@ function set_lang(language) {
     .then((data) => {
       switch (language) {
         case "FR":
-          document.getElementById("inputtext").placeholder =
-            data.FR[1].searchbar;
-          document.getElementById("coder").innerHTML = data.FR[2].madeby;
-          document.getElementById("title").innerHTML = data.FR[3].title;
-          document.getElementById("quote").innerHTML = data.FR[4].quote;
+          document.getElementById("inputtext").placeholder = data.FR.searchbar;
+          document.getElementById("coder").innerHTML = data.FR.madeby;
+          document.getElementById("div").innerHTML = data.FR.title;
+          document.getElementById("div").title = data.FR.title;
+          document.getElementById("quote").innerHTML = data.FR.quote;
+          document.getElementById("txtlangages").innerHTML = data.FR.txtlangue;
+          document.getElementById("txtrac").innerHTML = data.FR.txtrac;
           break;
 
         case "EN":
-          document.getElementById("inputtext").placeholder =
-            data.EN[1].searchbar;
-          document.getElementById("coder").innerHTML = data.EN[2].madeby;
-          document.getElementById("title").innerHTML = data.EN[3].title;
-          document.getElementById("quote").innerHTML = data.EN[4].quote;
+          document.getElementById("inputtext").placeholder = data.EN.searchbar;
+          document.getElementById("coder").innerHTML = data.EN.madeby;
+          document.getElementById("div").innerHTML = data.EN.title;
+          document.getElementById("div").title = data.EN.title;
+          document.getElementById("quote").innerHTML = data.EN.quote;
+          document.getElementById("txtlangages").innerHTML = data.EN.txtlangue;
+          document.getElementById("txtrac").innerHTML = data.EN.txtrac;
           break;
 
         case "JP":
-          document.getElementById("inputtext").placeholder =
-            data.JP[1].searchbar;
-          document.getElementById("coder").innerHTML = data.JP[2].madeby;
-          document.getElementById("title").style.fontSize = "450%";
-          document.getElementById("title").innerHTML = data.JP[3].title;
-          document.getElementById("quote").innerHTML = data.JP[4].quote;
+          document.getElementById("inputtext").placeholder = data.JP.searchbar;
+          document.getElementById("coder").innerHTML = data.JP.madeby;
+          document.getElementById("div").style.fontSize = "90px";
+          document.getElementById("div").innerHTML = data.JP.title;
+          document.getElementById("div").title = data.JP.title;
+          document.getElementById("quote").innerHTML = data.JP.quote;
+          document.getElementById("txtlangages").innerHTML = data.JP.txtlangue;
+          document.getElementById("txtrac").innerHTML = data.JP.txtrac;
+          break;
+
+        case "IT":
+          document.getElementById("inputtext").placeholder = data.IT.searchbar;
+          document.getElementById("coder").innerHTML = data.IT.madeby;
+          document.getElementById("div").innerHTML = data.IT.title;
+          document.getElementById("div").title = data.IT.title;
+          document.getElementById("quote").innerHTML = data.IT.quote;
+          document.getElementById("txtlangages").innerHTML = data.IT.txtlangue;
+          document.getElementById("txtrac").innerHTML = data.IT.txtrac;
+          break;
+
+        case "RU":
+          document.getElementById("inputtext").placeholder = data.RU.searchbar;
+          document.getElementById("coder").innerHTML = data.RU.madeby;
+          document.getElementById("div").innerHTML = data.RU.title;
+          document.getElementById("div").title = data.RU.title;
+          document.getElementById("quote").innerHTML = data.RU.quote;
+          document.getElementById("txtlangages").innerHTML = data.RU.txtlangue;
+          document.getElementById("txtrac").innerHTML = data.RU.txtrac;
+          break;
+
+        case "CN":
+          document.getElementById("inputtext").placeholder = data.CN.searchbar;
+          document.getElementById("coder").innerHTML = data.CN.madeby;
+          document.getElementById("div").innerHTML = data.CN.title;
+          document.getElementById("div").title = data.CN.title;
+          document.getElementById("quote").innerHTML = data.CN.quote;
+          document.getElementById("txtlangages").innerHTML = data.CN.txtlangue;
+          document.getElementById("txtrac").innerHTML = data.CN.txtrac;
           break;
 
         default:
+          document.getElementById("inputtext").placeholder = data.EN.searchbar;
+          document.getElementById("coder").innerHTML = data.EN.madeby;
+          document.getElementById("div").innerHTML = data.EN.title;
+          document.getElementById("div").title = data.EN.title;
+          document.getElementById("quote").innerHTML = data.EN.quote;
+          document.getElementById("txtlangages").innerHTML = data.EN.txtlangue;
+          document.getElementById("txtrac").innerHTML = data.EN.txtrac;
           break;
       }
     });

@@ -1,23 +1,56 @@
 {
-          "FR": [
-                    {"name": "Français"},
-                    {"searchbar":"Tapez votre recherche..."},
-                    {"madeby":"par <span onclick='document.location.href = 'https://www.github.com/Hitokii' '>Hitoki</span>"},
-                    {"title":"Irefo"},
-                    {"quote":"\"c'etait une blague, je l'ai vraiment fait\""}
-          ],
-          "EN": [
-                    {"name": "English"},
-                    {"searchbar":"Search on the web..."},
-                    {"madeby":"by <span onclick='document.location.href = 'https://www.github.com/Hitokii' '>Hitoki</span>"},
-                    {"title":"Irefo"},
-                    {"quote":"\"It was a joke, I really made it\""}
-          ],        
-          "JP" : [
-                    {"name": "日本語"},
-                    {"searchbar":"検索を入力してください..."},
-                    {"madeby":"<span onclick='document.location.href = 'https://www.github.com/Hitokii' '>ヒトキ－さん</span>による"},
-                    {"title":"イレフォ"},
-                    {"quote":"\"それは冗談だった、本当にそれを作った\""}
-          ]
+          "FR": {
+                    "name": "Français",
+                    "searchbar":"Rechercher sur le web...",
+                    "madeby":"par <span onclick='document.location.href = 'https://www.github.com/Hitokii' '>Hitoki</span>",
+                    "title":"Rhodes",
+                    "quote":"\"C'était une blague, je l'ai vraiment fait\"",
+                    "txtlangue":"Langages :",
+                    "txtrac":"Raccourcis :"
+          },
+          "EN": {
+                    "name": "English",
+                    "searchbar":"Search on the web...",
+                    "madeby":"by <span onclick='document.location.href = 'https://www.github.com/Hitokii' '>Hitoki</span>",
+                    "title":"Rhodes",
+                    "quote":"\"It was a joke, I really made it\"",
+                    "txtlangue":"Languages :",
+                    "txtrac":"Shortcuts :"
+          },
+          "JP" :  {
+                    "name": "日本語",
+                    "searchbar":"検索を入力してください...",
+                    "madeby":"<span onclick='document.location.href = 'https://www.github.com/Hitokii' '>ヒトキ－さん</span>による",
+                    "title":"ロドス",
+                    "quote":"\"それは冗談だった、本当にそれを作った\"",
+                    "txtlangue":"言語 :",
+                    "txtrac":"ショートカット :"
+          },
+          "IT" :  {
+                    "name": "Italiano",
+                    "searchbar":"Cerca nel web...",
+                    "madeby":"fatto da <span onclick='document.location.href = 'https://www.github.com/Hitokii' '>Hitoki</span>",
+                    "title":"Rhodes",
+                    "quote":"\"Era una battuta, l'ho davvero fatto\"",
+                    "txtlangue":"Lingue :",
+                    "txtrac":"Scorciatoie :"
+          },
+          "RU": {
+                    "name": "Русский",
+                    "searchbar":"Поиск в интернете...",
+                    "madeby":"сделано <span onclick='document.location.href = 'https://www.github.com/Hitokii' '>Hitoki</span>",
+                    "title":"Родос",
+                    "quote":"\"Это была шутка, я действительно сделал это\"",
+                    "txtlangue":"Языки :",
+                    "txtrac":"Ярлыки :"
+          },
+          "CN": {
+                    "name": "中文",
+                    "searchbar":"在网络上搜索...",
+                    "madeby":"由 <span onclick='document.location.href = 'https://www.github.com/Hitokii' '>Hitoki</span> 制作",
+                    "title":"罗德斯",
+                    "quote":"\"这是一个笑话，我真的做了\"",
+                    "txtlangue":"语言 :",
+                    "txtrac":"快捷方式 :"
+          }   
 }

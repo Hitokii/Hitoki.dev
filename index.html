@@ -7,13 +7,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Irefo - Search" />
+    <meta property="og:title" content="Rhodes - Search" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://hitoki.dev" />
     <meta property="og:image" content="http://hitoki.dev/Assets/img/Logo.png" />
-    <meta property="og:description" content="Irefo is a search engine made by Hitoki, Irefo have many useful shortcuts and some funny easter eggs" />
+    <meta property="og:description" content="Rhodes is a search engine made by Hitoki, Rhodes have many useful shortcuts and some funny easter eggs" />
     <meta name="theme-color" content="#FFFFFF">
-    <title>Irefo</title>
+    <title>Rhodes</title>
 </head>
 <body>
     <!-- Quote -->
@@ -26,25 +26,43 @@
     <!-- Hamburger Menu  -->
     <div id="menu_block">
         <center>
-        <h1>Langages :</h1>
+        <h1 id="txtlangages"></h1>
                 <img onclick="set_lang('FR')" class="flag" src="https://flagcdn.com/w320/fr.png">
                 <img onclick="set_lang('EN')"class="flag" src="https://flagcdn.com/w320/gb.png">
                 <img onclick="set_lang('JP')"class="flag" src="https://flagcdn.com/w320/jp.png">
-                <!-- <div id="Shortcutlist_block"></div> -->
+                <img onclick="set_lang('IT')"class="flag" src="https://flagcdn.com/w320/it.png">
+                <img onclick="set_lang('RU')"class="flag" src="https://flagpedia.net/data/flags/w320/ru.png">
+                <img onclick="set_lang('CN')"class="flag" src="https://flagcdn.com/w320/cn.png">
+                <div id="Shortcutlist_block">
+                    <ul style="list-style-type: none;">
+                        <p id="txtrac"></p>
+                        <br>
+                        <li>:lcl/:local - 127.0.0.1:80</li>
+                        <li>:syhix - syhix.tv</li>
+                        <li>:up - unknown-player.dev</li>
+                        <li>:yt - youtube.com</li>
+                        <li>:nt - netflix.com</li>
+                        <li>:cr - crunchyroll.com</li>
+                        <li>:tw - twitter.com</li>
+                        <li>:pacman</li>
+                        <li>:dd - Discord Developers.com</li>
+                        <li>:mcv - Minecraft Vanilla.net</li>
+                    </ul>
+                </div>
             </center>
-        <footer>ver 24.1</footer>
+        <footer>ver 25</footer>
     </div>
     <!-- MAIN BLOCK -->
     <div id="blocker">
     <!-- Title zone -->
     <div id="mainpage">
-        <img draggable="false" src="Assets/img/Logo.png">
-        <h1 id="title"></h1>
+        <img draggable="false" src="Assets/img/Logo.gif">
+        <div id="div" title="Rhodes">Rhodes</div>
         <p id="coder"></p>
     </div>
     <!-- Input zone -->
     <div id="cherchebar">
-        <img draggable="false" src="Assets/img/emoji.png">
+        <img draggable="false" src="Assets/img/emoji.gif">
         <input id="inputtext" type="search" placeholder="Search on the web..."></input>
     </div>
 </div>
