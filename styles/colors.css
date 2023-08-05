@@ -1,0 +1,29 @@
+:root {
+    --text-purple: #6C63FF;
+    --text-teal: #00B5AD;
+    --text-green: #00B543;
+}
+
+.text-purple {
+    color: var(--text-purple);
+}
+
+.bg-purple {
+    background-color: var(--text-purple);
+}
+
+.text-teal {
+    color: var(--text-teal);
+}
+
+.bg-teal {
+    background-color: var(--text-teal);
+}
+
+.text-green {
+    color: var(--text-green);
+}
+
+.bg-green {
+    background-color: var(--text-green);
+}

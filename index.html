@@ -1,56 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet"  href="./style.css">
-    <link rel="stylesheet" media="screen and (max-width: 760px)" href="phone.css" />
-    <link rel="icon"  type="image/png" href="Assets/img/Logo.png">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Irefo - Search" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://hitoki.dev" />
-    <meta property="og:image" content="http://hitoki.dev/Assets/img/Logo.png" />
-    <meta property="og:description" content="Irefo is a search engine made by Hitoki, Irefo have many useful shortcuts and some funny easter eggs" />
-    <meta name="theme-color" content="#FFFFFF">
-    <title>Irefo</title>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!-- Personnal CSS -->
+<link rel="stylesheet" href="styles/colors.css">
+<link rel="stylesheet" href="styles/style.css">
+<title>Hello, world!</title>
 </head>
-<body>
-    <!-- Quote -->
-    <blockquote id="quote"></blockquote>
-    <!-- Hamburger menu Btn -->
-    <div id="shortcut_logo" onclick="open_shortcut();">
-        <img id="logomenu" src="Assets/img/menu.png">
-        <img id="logocross" src="Assets/img/corss.png">
+<body >
+  <div id="accordion">
+      <div class="card bg-dark rounded-0" onmouseover="cursorPointer(this)">
+        <a class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          <h5 class="mb-0">
+            <h1 class="text-purple underline-1 text-center">
+              <‎Hitoki.Dev/>
+            </h1>
+          </h5>
+        </a>
+      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+        <ul class="nav flex-column">
+        <li class="nav-item text-white">
+        <a class="nav-link text-center active" href="#">Accueil</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link text-center text-white" href="#">Créations</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link text-center text-white" href="#">à propos</a>
+        </li>
+        </ul>
+      </div>
     </div>
-    <!-- Hamburger Menu  -->
-    <div id="menu_block">
-        <center>
-        <h1>Language :</h1>
-                <img onclick="set_lang('FR')" class="flag" src="https://flagcdn.com/w320/fr.png">
-                <img onclick="set_lang('EN')"class="flag" src="https://flagcdn.com/w320/gb.png">
-                <img onclick="set_lang('JP')"class="flag" src="https://flagcdn.com/w320/jp.png">
-                <div id="Shortcutlist_block"></div>
-            </center>
+  </div>
+  
+
+  <div class="container-fluid h-100" style="max-height: 100%;">
+    <div class="row h-100" >
+      <div class="col-3 bg-dark" id="leftrow">
+        <!-- feed -->
+        <h1 class="text-center text-purple">-Feed-</h1>
+      </div>
+      <div class="col" >
+        <!-- Terminal -->
+        <div class="container my-3 h-75" id="terminal">
+          <!-- Content here -->
+        
+          <h5 class="text-teal" id="input">|</h5>
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+  
+  
 
 
 
-        <footer>ver 24.1</footer>
-    </div>
-    <!-- MAIN BLOCK -->
-    <div id="blocker">
-    <!-- Title zone -->
-    <div id="mainpage">
-        <img draggable="false" src="Assets/img/Logo.png">
-        <h1 id="title"></h1>
-        <p id="coder"></p>
-    </div>
-    <!-- Input zone -->
-    <div id="cherchebar">
-        <img draggable="false" src="Assets/img/emoji.png">
-        <input id="inputtext" type="search" placeholder="Search on the web..."></input>
-    </div>
-</div>
-<script type="text/javascript" src="code.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
+<script src="scripts/Script.js"></script>
 </html>
