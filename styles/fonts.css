@@ -1,0 +1,8 @@
+@font-face {
+    font-family: k1;
+    src: url("/Assets/fonts/ka1.ttf");
+}
+
+.f1 {
+    font-family: k1;
+}

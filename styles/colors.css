@@ -27,3 +27,14 @@
 .bg-green {
     background-color: var(--text-green);
 }
+
+.btn-hitoki {
+    background-color: #fd850e;
+    color: white;
+    outline: hidden;
+}
+
+.btn-hitoki:hover {
+    background-color: #df4309;
+    color: white;
+}

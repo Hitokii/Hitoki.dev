@@ -1,16 +1,18 @@
-function cursorPointer(element) {
-    element.style.cursor = "pointer";
-}
-
-let text = "visiteur@hitokidev:~$ ";
-
-async function printTextToTerminal() {
-    await new Promise(r => setTimeout(r, 2000));
-    let terminal = document.getElementById("input");
-    for (let i = 0; i < text.length; i++) {
-        const letter = text[i];
-        
-        await new Promise(r => setTimeout(r, 50));
+var sidebar = document.getElementsByClassName("sidebar")[0];
+sidebar.addEventListener("mouseover", function() {
+    sidebar.classList.add("sidebar-hover");
+    });
+sidebar.addEventListener("mouseout", function() {
+    sidebar.classList.remove("sidebar-hover");
     }
-}
-printTextToTerminal()
+);
+
+var flags = document.querySelectorAll(".flag");
+flags.forEach(element => {
+    element.addEventListener("click", function() {
+        flags.forEach(element => {
+            element.classList.remove("selected");
+        });
+        element.classList.add("selected");
+    });
+})
