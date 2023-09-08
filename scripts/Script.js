@@ -16,3 +16,5 @@ flags.forEach(element => {
         element.classList.add("selected");
     });
 })
+
+$('.carousel').carousel().pause = "hover"
