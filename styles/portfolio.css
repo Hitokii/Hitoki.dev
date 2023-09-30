@@ -1,0 +1,35 @@
+@font-face {
+    font-family: title;
+    src: url(/Assets/fonts/Mont-HeavyDEMO.otf);
+}
+
+body {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    background: linear-gradient(-45deg, #102040 40%, #30346A 90%);
+}
+
+h1 {
+    font-family: title;
+}
+
+nav {
+    background-color: #000000BB;
+    border-radius: 50px;
+}
+
+.sdown {
+    width: 200px;
+    height: 200px;
+}
+
+.divider {
+    width: 80%;
+    height: 1px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background: radial-gradient(#4052DE, #000);
+}
