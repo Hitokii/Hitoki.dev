@@ -3,6 +3,61 @@
     src: url(/Assets/fonts/Mont-HeavyDEMO.otf);
 }
 
+@font-face {
+    font-family: k1;
+    src: url(/Assets/fonts/ka1.ttf);
+}
+
+/* OVERRIDE */
+.card-title {
+    text-align: center;
+    font-family: title;
+}
+
+.card-text {
+    padding: 0;
+    margin: 0;
+}
+
+.progress {
+    padding: 0;
+    margin: 0;
+}
+
+.progress-bar {
+    transition: 1s width;
+    width: 0%;
+}
+
+.HTML-language {
+    background: #f98020;
+    color: #000;
+}
+
+.JavaScript-language {
+    background-color: #f9ea20;
+    color: black;
+}
+
+/* OVERRIDE END */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+    scroll-snap-align: start;
+    /* scroll to top */
+
+  }
+
+
 body {
     position: absolute;
     left: 0;
@@ -16,7 +71,7 @@ h1 {
 }
 
 nav {
-    background-color: #000000BB;
+    background-color: #ffffff20;
     border-radius: 50px;
 }
 
@@ -28,8 +83,19 @@ nav {
 .divider {
     width: 80%;
     height: 1px;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     background: radial-gradient(#4052DE, #000);
+}
+
+#themeswitcher:hover {
+    cursor: pointer;
+}
+
+.card {
+    background: #ffffff20;
+    border: 2px solid #ffffff40;
 }

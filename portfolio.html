@@ -1,17 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html data-bs-theme="dark">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-			crossorigin="anonymous"
-		/>
-        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-        <link rel="stylesheet" href="styles/portfolio.css">
-
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="styles/anim.css">
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="favicon" href="/favicon.ico">
 		<title>Les codes de Max</title>
 	</head>
 
@@ -21,46 +17,46 @@
           <a class="nav-link" href="#créations">Créations</a>
           <a class="nav-link" href="#">Infos</a>
           <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" id="themeswitcher">Switch Theme</a>
         </nav>
         
-        <div class="container mt-5">
-            <h1>PERLOT Maxence <i class="lab la-dev h1"></i></h1>
-            <h5>{Développeur FullStack}</h5>
+        <div class="container mt-3">
+            <h1 class="ffl">PERLOT Maxence <i class="lab la-dev h1"></i></h1>
+            <h5 class="ffl" style="animation-delay: 0.4s">{Développeur FullStack}</h5>
             
-            <div class="container">
+              <div class="container">
                 <div class="row">
                   <div class="col">
-                    <i class="lab la-js-square h1" data-toggle="tooltip" data-placement="top" title="JavaScript"></i>
-                </div>
-                <div class="col">
-                      <i class="lab la-python h1" data-toggle="tooltip" data-placement="top" title="Python"></i>
-                    </div>
-                    <div class="col">
-                      <i class="lab la-java h1 data-toggle="tooltip" data-placement="top" title="Java"></i>
-                    </div>
-                    <div class="col">
-                      <i class="lab la-php h1" data-toggle="tooltip" data-placement="top" title="PHP"></i>
-                    </div>
-                    <div class="col">
-                      <i class="lab la-bootstrap h1" data-toggle="tooltip" data-placement="top" title="Bootstrap"></i>
-                    </div>
-                    <div class="col">
-                      <i class="lab la-node-js h1" data-toggle="tooltip" data-placement="top" title="NodeJS"></i>
-                    </div>
-                    <div class="col">
-                      <i class="lab la-vaadin h1" data-toggle="tooltip" data-placement="top" title="Vaadin"></i>
-                    </div>
-                    <div class="col">
-                      <i class="las la-database h1" data-toggle="tooltip" data-placement="top" title="MySQL/SQLite"></i>
+                    <i class="lab la-js-square h1 ffb" data-toggle="tooltip" data-placement="top" title="JavaScript"></i>
+                  </div>
+                  <div class="col">
+                    <i class="lab la-python h1 ffb" style="animation-delay: 0.2s;" data-toggle="tooltip" data-placement="top" title="Python"></i>
+                  </div>
+                  <div class="col">
+                    <i class="lab la-java h1 ffb" style="animation-delay: 0.4s;" data-toggle="tooltip" data-placement="top" title="Java"></i>
+                  </div>
+                  <div class="col">
+                    <i class="lab la-php h1 ffb" style="animation-delay: 0.6s;" data-toggle="tooltip" data-placement="top" title="PHP"></i>
+                  </div>
+                  <div class="col">
+                    <i class="lab la-bootstrap h1 ffb" style="animation-delay: 0.8s;" data-toggle="tooltip" data-placement="top" title="Bootstrap"></i>
+                  </div>
+                  <div class="col">
+                    <i class="lab la-node-js h1 ffb" style="animation-delay: 1s;" data-toggle="tooltip" data-placement="top" title="NodeJS"></i>
+                  </div>
+                  <div class="col">
+                    <i class="lab la-vaadin h1 ffb" style="animation-delay: 1.2s;" data-toggle="tooltip" data-placement="top" title="Vaadin"></i>
+                  </div>
+                  <div class="col">
+                    <i class="las la-database h1 ffb" style="animation-delay: 1.4s;" data-toggle="tooltip" data-placement="top" title="MySQL/SQLite"></i>
                   </div>
                 </div>
               </div>
-        </div>
-
+            </div>
         <div class="w-100 mr-4 p-3 d-grid text-center py-5">
             <h2 class="py-2">Outils les plus utilisés</h2>
             <div class="row justify-content-md-center">
-              <div class="col-xs-1-12 px-4">
+              <div class="col px-4 ffl" style="animation-delay: 1.5s;">
                 <div class="card rounded">
                   <div class="card-body">
                     <h3 class="card-title">Visual Studio Code</h3>
@@ -71,7 +67,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xs-1-12 px-4">
+        <div class="col px-4 ffb" style="animation-delay: 1.5s;">
             <div class="card">
                 <div class="card-body">
                     <h3 class="card-title text-center">GitHub</h3>
@@ -82,7 +78,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xs-1-12 px-4">
+        <div class="col px-4 ffr" style="animation-delay: 1.5s;">
             <div class="card">
                 <div class="card-body">
                     <h3 class="card-title text-center">Discord</h3>
@@ -97,62 +93,116 @@
         </div>
 
         <!-- Créations -->
-        <div class="divider my-5"></div>
-
-        <div class="container">
-            <h2>Mes Créations</h2>
-            <div class="row">
-              <div class="col-xs-1-12">
-                <div class="card">
-                  <div class="card-body">
-                    <h3 class="card-title">Hitoki.dev</h3>
-                    <p class="card-text">Hitoki.dev, le site sur lequel vous êtes</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-1-12">
-                <div class="card">
-                  <div class="card-body">
-                    <a class="card-title h2" href="https://github.com/Hitokii/DiscordJishoDictionnary">Jisho</a>
-                    <p class="card-text">Jisho est une extension discord qui permet 
-                        <br>l'intégration d'un dictionnaire japonais.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-1-12">
-                <div class="card">
-                  <div class="card-body">
-                    <h3 class="card-title">Projet BTS</h3>
-                    <p class="card-text">Durant mon année, j'ai du effectué une horloge Textuelle.<br>Voyez par vous même!</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-1-12">
-                <div class="card">
-                  <div class="card-body">
-                    <h3 class="card-title">Title</h3>
-                    <p class="card-text">Text</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-1-12">
-                <div class="card">
-                  <div class="card-body">
-                    <h3 class="card-title">Title</h3>
-                    <p class="card-text">Text</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-1-12">
-                <div class="card">
-                  <div class="card-body">
-                    <h3 class="card-title">Title</h3>
-                    <p class="card-text">Text</p>
-                  </div>
+        <div class="divider"></div>
+        
+        <h2 class="pt-5" id="créations">Mes créations</h2>
+        <div class="row">
+          <div class="col-4">
+            <div class="card">
+              <div class="card-body repo" name="Hitoki.dev">
+                <h3 class="card-title">Hitoki.dev</h3>
+                <div class="rounded" style="background-color: #f98020; width: 100%; height: 100px;">
+                  <h2 style="font-family: k1; text-align: center;color: black;">Hitoki.dev!</h2>
                 </div>
               </div>
             </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-body repo" name="DiscordJishoDictionnary">
+                <h3 class="card-title">Jisho</h3>
+                <p class="card-text">Text</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-body repo" name="Ditto">
+                <h3 class="card-title">Ditto</h3>
+                <p class="card-text">Text</p>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="row pt-3">
+          <div class="col-4">
+            <div class="card">
+              <div class="card-body repo" name="BlackJack">
+                <h3 class="card-title">BlackJack</h3> <!-- https://hitokii.github.io/Blackjack/ -->
+                <p class="card-text">Text</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-body repo" name="MinecraftLeds">
+                <h3 class="card-title">MinecraftLeds</h3>
+                <p class="card-text">Text</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">TouHou-Dictionnary</h3>
+                <p class="card-text">Text</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-3">
+          <div class="col-4">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">DinoCoop</h3>
+                <p class="card-text">Text</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Perfect-Number</h3>
+                <p class="card-text">Text</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">SpotTheImpostor</h3>
+                <p class="card-text">Text</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-3">
+          <div class="col-4">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Schwi</h3>
+                <p class="card-text">Text</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">DiscordBots</h3>
+                <p class="card-text">Text</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Itch.io</h3>
+                <p class="card-text">Text</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
 
 
 
@@ -160,20 +210,7 @@
 
 
 		<!-- Import -->
-		<script
-			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-			crossorigin="anonymous"
-		></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 	</body>
+  <script src="scripts/Script.js"></script>
 </html>
