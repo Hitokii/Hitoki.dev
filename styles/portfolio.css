@@ -55,15 +55,16 @@ html {
     scroll-snap-align: start;
     /* scroll to top */
 
-  }
+}
 
 
 body {
     position: absolute;
+    top: 10%;
     left: 0;
     width: 100%;
     padding: 30px;
-    background: linear-gradient(-45deg, #102040 40%, #30346A 90%);
+    background: linear-gradient(-45deg, #164010 40%, #30346A 90%);
 }
 
 h1 {
@@ -98,4 +99,13 @@ nav {
 .card {
     background: #ffffff20;
     border: 2px solid #ffffff40;
+}
+
+.fixed {
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    z-index: 100;
 }
