@@ -1,20 +1,30 @@
-var sidebar = document.getElementsByClassName("sidebar")[0];
-sidebar.addEventListener("mouseover", function() {
-    sidebar.classList.add("sidebar-hover");
-    });
-sidebar.addEventListener("mouseout", function() {
-    sidebar.classList.remove("sidebar-hover");
+let devtech = document.querySelector('#devtech');
+
+let index = 0;
+async function typeWriter() {
+    let techs = ["Javascript", "Typescript", "Java", "C++"]
+    await removeWord();
+
+    let word = techs[index];
+
+    setTimeout(() => {
+        devtech.style.color = "#" + Math.floor(Math.random() * 16777215).toString(16); 
+        for (let i = 0; i < word.length; i++) {
+            const element = word[i];
+            setTimeout(() => {
+                devtech.innerHTML += element;
+            }, 100 * i + Math.random() * 100);
+        }
+    }, 1500);
+    index == techs.length - 1 ? index = 0 : index++;
+}
+
+async function removeWord() {
+    for (let i = 0; i < devtech.innerHTML.length; i++) {
+        setTimeout(() => {
+            devtech.innerHTML = devtech.innerHTML.slice(0, -1);
+        }, 100 * i + Math.random() * 100);
     }
-);
-
-var flags = document.querySelectorAll(".flag");
-flags.forEach(element => {
-    element.addEventListener("click", function() {
-        flags.forEach(element => {
-            element.classList.remove("selected");
-        });
-        element.classList.add("selected");
-    });
-})
-
-$('.carousel').carousel().pause = "hover"
+}
+typeWriter();
+setInterval(() => typeWriter(), 5000);

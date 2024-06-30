@@ -4,110 +4,39 @@
     box-sizing: border-box;
 }
 
-html,
-body {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
+html, body {
     height: 100%;
+    width: 100%;
+    color: white;
 }
 
 body {
-    background: linear-gradient(135deg, #130717, rgb(32, 38, 57));
-    /* background: linear-gradient(90deg, red 50%,  blue 0%); */
-    background-size: 200% 200%;
-    animation: backgroundmove 5s ease-in-out infinite;
+    font-family: monospace;
+    background: linear-gradient(135deg, #210971, #721010);
 }
 
-#avatar-placeholder {
-    width: 20rem;
-    background-color: #fd850e;
-}
-
-#avatar-placeholder img {
-    margin: 5px;
-    border: 10px solid #df4309;
-    background-color: #130717;
-    border-radius: 100%;
-}
-
-.flag {
-    width: 4rem;
-    transition: .5s;
-}
-
-.flag.selected {
-    border: 3pt solid white;
-    transition: 0.5s;
-    border-radius: 5%;
-    filter: drop-shadow(0px 0px 10px white);
-}
-
-.flag:hover {
-    scale: 1.1;
-    cursor: pointer;
-    filter: drop-shadow(0px 0px 10px white);
-}
-
-nav {
-    display: flex;
-    height: 10rem;
-}
-
-#header {
-    width: 100%;
-    background-color: #fd850e;
-}
-
-.sidebar {
+#leftside {
     position: absolute;
-    left: 0;
-    top: calc(50% - 7.5rem);
-    transform: translate(-18rem, 0);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 30rem;
-    width: 25rem;
-    border-radius: 5%;
-    transition: 1s;
-    animation: slide_to_left 1s ease-in-out forwards;
-}
-
-@keyframes slide_from_left {
-    0% {
-        transform: translate(-18rem, 0);
-    }
-
-    100% {
-        transform: translate(-1rem, 0);
-    }
-}
-
-@keyframes slide_to_left {
-    0% {
-        transform: translate(-1rem, 0);
-    }
-
-    100% {
-        transform: translate(-18rem, 0);
-    }
-}
-
-.sidebar-hover {
-    animation: slide_from_left 1s ease-in-out forwards;
-    transition: 1s;
-}
-
-.container {
-    display: flex;
-    color: #fd850e;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 45rem;
-    /* border: 1pt solid #fd850e; */
-    border-radius: 2.5%;
+}
+
+#leftside a {
+    font-size: 1.5rem;
+    color: white;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
 }
