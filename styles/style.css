@@ -53,7 +53,7 @@ nav a::after {
     height: 2px;
     background-color: white;
     left: 50%;
-    transition: 1s;
+    transition: .2s;
 }
 
 nav a:hover:after {
@@ -66,7 +66,7 @@ nav a:hover:after {
 
 
 
-#leftside {
+.leftside {
     position: absolute;
     top: 30%;
     left: 10%;
@@ -77,7 +77,7 @@ nav a:hover:after {
     text-align: start;
 }
 
-#leftside h1 {
+.leftside h1 {
     /* font-size: 5rem; */
     margin-bottom: 1rem;
     animation: fadeIN 2s forwards;
@@ -86,7 +86,7 @@ nav a:hover:after {
     
 }
 
-#leftside p {
+.leftside p {
     /* font-family: Anton; */
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -112,7 +112,16 @@ nav a:hover:after {
     }
 }
 
-
+@keyframes fadeOUT {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+}
 
 
 
