@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Sarabun;
+
 }
 
 html, body {
@@ -12,31 +14,117 @@ html, body {
 
 body {
     font-family: monospace;
-    background: linear-gradient(135deg, #210971, #721010);
+    background: linear-gradient(90deg,#1d182e, #410100);
 }
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+
+nav a, nav a:hover{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+}
+
+nav a::after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    left: 50%;
+    transition: 1s;
+}
+
+nav a:hover:after {
+    content: '';
+    display: block;
+    width: 100%;
+    left: 0;
+    background-color: white;
+}
+
+
 
 #leftside {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 30%;
+    left: 10%;
+    width: 50%;
+    /* transform: translate(-50%, -50%); */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    text-align: start;
 }
 
-#leftside a {
+#leftside h1 {
+    /* font-size: 5rem; */
+    margin-bottom: 1rem;
+    animation: fadeIN 2s forwards;
+    opacity: 0;
+    font-family: Lilita One;
+    
+}
+
+#leftside p {
+    /* font-family: Anton; */
     font-size: 1.5rem;
-    color: white;
-    animation: blink 1s infinite;
+    margin-bottom: 1rem;
+    opacity: 0;
+    animation: fadeIN 2s .5s forwards;
+
 }
 
-@keyframes blink {
-    0%, 100% {
+
+.fadein {
+    opacity: 0;
+    animation: fadeIN 2s forwards;
+}
+
+@keyframes fadeIN {
+    from {
         opacity: 0;
+        transform: translateY(50%);
     }
-    50% {
+    to {
         opacity: 1;
+        transform: translateY(0);
     }
+}
+
+
+
+
+
+.btn-glassy {
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn-glassy:hover {
+    padding: 1rem 2rem;
 }
