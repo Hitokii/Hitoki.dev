@@ -5,11 +5,15 @@ const pushUrl = (href) => {
   window.dispatchEvent(new Event('popstate'), { url: href });
 };
 
-document.querySelector(document.location.hash).hidden = false;
+
+if (!document.location.hash == "")
+  document.querySelector(document.location.hash).hidden = false;
+else  
+  document.location.hash = "#home";
 
 function react(href) {
   // href.target.location.hash
-    let pages = ["#home", "#about"]
+    let pages = ["#home", "#about", "#skills"]
     console.log(href.target.location.hash);
     pages.forEach(page => {
       document.querySelector(page).style.animation = "fadeOUT 1s forwards";

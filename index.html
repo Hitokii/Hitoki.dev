@@ -9,7 +9,7 @@
   <link rel="stylesheet"
     href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- Personnal CSS -->
   <link rel="stylesheet" href="styles/colors.css">
   <link rel="stylesheet" href="styles/style.css">
@@ -21,33 +21,93 @@
   <header>
     <h1 class="display-3" style="font-family: serif;">M</h1>
     <nav>
-        <a href="#home">Accueil</a>
-        <a href="#about">A propos</a>
-        <a href="#skills">Compétences</a>
-        <a href="#projects">Projets</a>
-        <a href="#contact" class="btn-glassy">Contact</a>
+      <a href="#home">Accueil</a>
+      <a href="#about">A propos</a>
+      <a href="#skills">Compétences</a>
+      <a href="#projects">Projets</a>
+      <a href="#contact" class="btn-glassy">Contact</a>
   </header>
-  
+
   <div class="leftside" id="home" hidden>
     <h1 class="display-1" id="np">&lt;/&gt; Maxence Perlot</h1>
-    <p>
-      Je suis un jeune développeur passionné par le code et les nouvelles technologies. Je suis actuellement
-      diplome d'un BTS Systeme informatique et d'une Licence générale en informatique. Je suis à la recherche d'un
-      emploi dans le domaine du développement web ou logiciel.
+    <p style="white-space: pre;">
+      Un passionné de technologie et d'innovation.
+      Mon objectif est de fournir des solutions créatives et efficaces pour répondre à vos besoins. 
+      Que vous ayez une idée novatrice ou un projet en cours, je suis là pour vous aider à chaque étape. 
+      Découvrez mes compétences et comment je peux contribuer à votre réussite en explorant ce site.
     </p>
-    <a class="btn-glassy w-25 fadein text-center" style="animation-delay: 1.5s;">Me contacter</a>
+    <a class="btn-glassy w-25 fadein text-center" style="animation-delay: 1.5s;" href="#about">A propos</a>
     </p>
   </div>
   <div class="leftside" id="about" hidden>
     <h1 class="display-1" id="np"><i class="las la-info-circle"></i> À propos de moi</h1>
-    <p>
-      Hitoki, de son vrai nom Maxence Perlot, est un jeune développeur de <span id="age"></span> ans,
-      J'ai
+    <p class="pb-5">
+      Actuellement agé de <span id="age"></span> ans,
+      je suis un jeune développeur passionné par le code et les nouvelles technologies. Je suis actuellement en 
+      Licence Informatique Générale à Strasbourg. Je suis à la recherche d'un emploi dans le domaine du développement informatique.
     </p>
-    <a class="btn-glassy w-25 fadein text-center" style="animation-delay: 1.5s;">Me contacter</a>
-    </p>
+    <div id="timeline">
+      <div class="timelinepost">
+        <div class="timelinedot"></div>
+        <div class="timelineContent">
+          <h2 class="display-4"><i class="las la-school"></i> Lycée Stanislas - Wissembourg</h2>
+          <h2>2018-2021</h2>
+          <p>Obtention du Baccalauréat professionnel.<br>
+            Filière : Métiers de l'Electricité et de ses Environnements Connectés</p>
+        </div>
+      </div>
+      <div class="timelinepost">
+        <div class="timelinedot"></div>
+        <div class="timelineContent">
+          <h2 class="display-4"><i class="las la-briefcase"></i> ACTION - Wissembourg</h2>
+          <h2>2022-2023</h2>
+          <p>Job étudiants<br>
+            Role : Agent polyvalent</p>
+        </div>
+      </div>
+      <div class="timelinepost">
+        <div class="timelinedot"></div>
+        <div class="timelineContent">
+          <h2 class="display-4"><i class="las la-graduation-cap"></i> Lycée Heinrich Nessel - Haguenau</h2>
+          <h2>2021-2023</h2>
+          <p>Obtention du BTS<br>
+            Spécialité : système numérique (informatique et réseaux)</p>
+        </div>
+      </div>
+      <div class="timelinepost">
+        <div class="timelinedot"></div>
+        <div class="timelineContent">
+          <h2 class="display-4"><i class="las la-graduation-cap"></i> Conservatoire national des arts et métiers - Strasbourg</h2>
+          <h2>2023-2024 (En cours)</h2>
+          <p>Obtention de la Licence<br>
+            Diplome : Licence Informatique Générale (L3)</p>
+        </div>
+      </div>
+
+      
+
+    </div>
   </div>
-  
+  <div id="skills" hidden>
+    <div id="skilllist">
+      <i class="las la-js-square"></i>
+      <i class="lab la-java"></i>
+      <i class="las la-python"></i>
+      <i class="las la-html5"></i>
+      <i class="las la-css3"></i>
+      <i class="las la-bootstrap"></i>
+      <i class="las la-docker"></i>
+      <i class="las la-git"></i>
+      <i class="las la-github"></i>
+      <i class="las la-linux"></i>
+      <i class="las la-markdown"></i>
+      <i class="lab la-node"></i>
+      <i class="las la-react"></i>
+      <i class="las la-trello"></i>
+      <i class="las la-vaadin"></i>
+    </div>
+  </div>
+
 
 
 
