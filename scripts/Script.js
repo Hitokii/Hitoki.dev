@@ -13,8 +13,9 @@ else
 
 function react(href) {
   // href.target.location.hash
-    let pages = ["#home", "#about", "#skills"]
+    let pages = ["#home", "#about", "#skills", "#projects", "#contact"]
     console.log(href.target.location.hash);
+    window.scrollTo(0, 0);
     pages.forEach(page => {
       document.querySelector(page).style.animation = "fadeOUT 1s forwards";
       setTimeout(() => {

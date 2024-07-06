@@ -14,7 +14,10 @@ html, body {
 
 body {
     font-family: monospace;
-    background: linear-gradient(90deg,#1d182e, #410100);
+    background-color: #DA460D;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23DA460D' cx='50' cy='0' r='50'/%3E%3Cg fill='%23d1430d' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c8400d' cx='50' cy='100' r='50'/%3E%3Cg fill='%23c03d0d' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b73a0d' cx='50' cy='200' r='50'/%3E%3Cg fill='%23ae370d' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a5340c' cx='50' cy='300' r='50'/%3E%3Cg fill='%239c310c' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23942e0c' cx='50' cy='400' r='50'/%3E%3Cg fill='%238b2b0c' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%2382290c' cx='50' cy='500' r='50'/%3E%3Cg fill='%2379260c' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%2370230c' cx='50' cy='600' r='50'/%3E%3Cg fill='%2368200c' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%235f1d0c' cx='50' cy='700' r='50'/%3E%3Cg fill='%23561a0c' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%234d170b' cx='50' cy='800' r='50'/%3E%3Cg fill='%2344140b' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%233c110b' cx='50' cy='900' r='50'/%3E%3Cg fill='%23330e0b' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%232A0B0B' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: contain;
 }
 
 header {
@@ -128,15 +131,18 @@ nav a:hover:after {
 .btn-glassy {
     border: 2px solid white;
     color: white;
+    text-decoration: none;
+    backdrop-filter: blur(5px);
     border-radius: 10px;
-    padding: .5rem 1rem;
+    padding: 1rem 2rem;
     cursor: pointer;
     transition: .5s;
-    height: auto;
+    height: fit-content;
 }
 
 .btn-glassy:hover {
-    padding: 1rem 2rem;
+    scale: 1.2;
+    color: white;
 }
 
 #timeline {
@@ -177,21 +183,72 @@ nav a:hover:after {
 }
 
 #skills {
+    width: 80%;
     height: 100%;
 }
 
-#skilllist {
-
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
+.skills {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    justify-content: space-around;
+    gap: 2rem;
+    grid-template-columns: repeat(2, auto);
+}
+
+.skill {
+    display: flex;
+    flex-direction: row;
+    align-items: last baseline;
     gap: 1rem;
-    font-size: 10vw;
-    margin-left: 5%;
+}
+
+.skill > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.skill > i, .skill label {
+    font-family: sarabun;
+    font-size: 2rem;
+}
+
+.progress {
+    height: 1%;
+}
+
+.progress-bar {
+    font-size: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+    font-family: monospace;
+}
+
+#projects {
+    padding: 10%;
+}
+
+.projects {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-around
+}
+
+#projects h1 {
+    font-family: lilita one;
+}
+
+.project {
+    padding: 2rem;
+    background-color: #ffffff33;
+    border: 1px solid #ffffff44;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    transition: .5s ;
+}
+
+.project:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
