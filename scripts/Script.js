@@ -1,3 +1,4 @@
+var lang = "fr";
 window.addEventListener('popstate', react);
 
 const pushUrl = (href) => {
@@ -5,24 +6,26 @@ const pushUrl = (href) => {
   window.dispatchEvent(new Event('popstate'), { url: href });
 };
 
-
 if (!document.location.hash == "")
-  document.querySelector(document.location.hash).hidden = false;
+  document.querySelectorAll(document.location.hash).forEach(e => e.hidden = false);
 else  
   document.location.hash = "#home";
 
+document.querySelectorAll(`a[href=\"${document.location.hash}\"]`).forEach(e => e.setAttribute("enabled", "true"));
 function react(href) {
   // href.target.location.hash
-    let pages = ["#home", "#about", "#skills", "#projects", "#contact"]
-    console.log(href.target.location.hash);
+  let pages = ["#home", "#about", "#skills", "#projects", "#contact"]
     window.scrollTo(0, 0);
     pages.forEach(page => {
-      document.querySelector(page).style.animation = "fadeOUT 1s forwards";
+      document.querySelectorAll(page).forEach(e => e.style.animation = "fadeOUT 1s forwards");
+      document.querySelectorAll(`a[href=\"${page}\"]`).forEach(e => e.setAttribute("enabled", "false"));
       setTimeout(() => {
-        document.querySelector(page).hidden = true;
+        document.querySelectorAll(page).forEach(e => e.hidden = true);
         if (href.target.location.hash == page) {
-          document.querySelector(page).style.animation = "fadeIN 1s forwards";
-          document.querySelector(page).hidden = false;
+          document.querySelectorAll(page).forEach(e => e.style.animation = "fadeIN 1s forwards");
+          document.querySelectorAll(page).forEach(e => e.hidden = false);
+          if (page != "#contact")
+            document.querySelectorAll(`a[href=\"${page}\"]`).forEach(e => e.setAttribute("enabled", "true"));
         }
       }, 1000);
     });
@@ -41,4 +44,29 @@ function getAge() {
   return age;
 }
 
-document.querySelector("#age").innerText = getAge();
+
+
+
+
+fetch("Assets/i18n.json").then(response => response.json()).then(i18n => {
+  document.querySelectorAll("*").forEach(e => {
+    if (e.hasAttribute("aria-label")) {
+      e.innerHTML = i18n[lang][e.getAttribute("aria-label")];
+    }
+  });
+  document.querySelector("#age").innerText = getAge();
+});
+
+
+function changeLang() {
+  lang = lang == "fr" ? "en" : "fr";
+  flag = document.querySelector("#flagimage");
+  flag.src = lang == "en" ? "Assets/img/uk.png" : "Assets/img/france.png";
+  fetch("Assets/i18n.json").then(response => response.json()).then(i18n => {
+    document.querySelectorAll("*").forEach(e => {
+      if (e.hasAttribute("aria-label")) {
+        e.innerHTML = i18n[lang][e.getAttribute("aria-label")];
+      }
+    });
+  });
+}
